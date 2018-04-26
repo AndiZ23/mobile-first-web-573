@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=devlice-width" />
+    <title>Handy Guides to Beijing</title>
+    <link rel="stylesheet" href="style-new.css">
+    <link rel="stylesheet" href="homecard.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <!-- Horinzontal nav on wide screens -->
+      <nav class="w3-bar w3-border w3-theme w3-large w3-padding-16">
+        <a href="home-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-home" aria-hidden="true"></span>Home</a>
+        <a href="attractions-newnav.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-hand-peace-o" aria-hidden="true"></span>Attractions</a>
+        <a href="local-new.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-info-circle" aria-hidden="true"></span>Local</a>
+        <a href="gallery-newnav.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-picture-o" aria-hidden="true"></span>Gallery</a>
+          
+        <!-- Hide the hamburger icon on wide screens, but show on small screens -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fa fa-bars fa-lg"></i></a>
+      </nav>
+      
+      <!-- Vertical container (w3-bar-block) for nav elements -->
+      <nav id="smallnav" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium w3-large w3-padding-16">
+        <a href="attractions-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-hand-peace-o" aria-hidden="true"></span>Attractions</a>
+        <a href="local-new.html" class="w3-bar-item w3-button"><span class="fa fa-info-circle" aria-hidden="true"></span>Local</a>
+        <a href="gallery-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-picture-o" aria-hidden="true"></span>Gallery</a>
+      </nav>
+    
+    <section class="cardboard">
+      <article class="card">
+        <div class="card-content"><a href="attractions-newnav.html#greatwall">
+          <img src="./images/greatwall-thumbnail.jpg" alt="" class="card-img">
+          <div class="card-title">Great Wall</div>
+        </a></div>
+      </article>
+      
+      <article class="card">
+        <div class="card-content"><a href="attractions-newnav.html#heaventemple">
+          <img src="./images/heaventemple-thumbnail.jpg" alt="" class="card-img">
+          <div class="card-title">Heaven Temple</div>
+        </a></div>
+      </article>
+      
+      <article class="card">
+        <div class="card-content"><a href="attractions-newnav.html#birdnest">
+          <img src="./images/birdnestthumbnail.jpg" alt="" class="card-img">
+          <div class="card-title">National Stadium</div>
+        </a></div>
+      </article>
+    </section>
+    <footer><small>Design by Andi Zhou</small></footer>
+    <script>
+function myFunction() {
+  var x = document.getElementById("smallnav");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+    </script>
+    <script src="https://use.fontawesome.com/76b18e051a.js"></script>
+  </body>
+</html>

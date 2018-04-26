@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=devlice-width" />
+    <title>Food|Transportation| - Local Informaiton</title>
+    <link rel="stylesheet" href="./style-new.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    
+        <!-- Horinzontal nav on wide screens -->
+      <nav class="w3-bar w3-border w3-theme w3-large w3-padding-16">
+        <a href="home-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-home" aria-hidden="true"></span>Home</a>
+        <a href="attractions-newnav.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-hand-peace-o" aria-hidden="true"></span>Attractions</a>
+        <a href="local-new.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-info-circle" aria-hidden="true"></span>Local</a>
+        <a href="gallery-newnav.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-picture-o" aria-hidden="true"></span>Gallery</a>
+          
+        <!-- Hide the hamburger icon on wide screens, but show on small screens -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fa fa-bars fa-lg"></i></a>
+      </nav>
+      
+      <!-- Vertical container (w3-bar-block) for nav elements -->
+      <nav id="smallnav" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium w3-large w3-padding-16">
+        <a href="attractions-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-hand-peace-o" aria-hidden="true"></span>Attractions</a>
+        <a href="local-new.html" class="w3-bar-item w3-button"><span class="fa fa-info-circle" aria-hidden="true"></span>Local</a>
+        <a href="gallery-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-picture-o" aria-hidden="true"></span>Gallery</a>
+      </nav>
+
+    
+    <section class="sub-nav-col">
+      <div>
+        <a id="button1" href="#button1"><span class="fa fa-cutlery" aria-hidden="true"></span>Food<i id="icon1" class="fa fa-caret-down" aria-hidden="true"></i></a>
+      </div>
+      <section>
+        <article class="a1">
+          <h3>Beijing Roast Duck</h3>
+          <picture>
+            <source media="(max-width: 799px)" srcset="./images/beijingduck-640w.jpg">
+            <source media="(min-width: 800px)" srcset="./images/beijingduck-1000w.jpg">
+            <img src="./images/beijingduck-1000w.jpg" alt="Beijing Duck">
+          </picture>
+          <p class="hide1"><b>Beijing roast duck or Peking Duck</b> (北京烤鸭 běijīng kǎoyā /bay-jing kaow-yaa/) is the epitome of Beijing cuisine and if you had to choose just one dish to try whilst in the capital, this would be it. The dish is mostly esteemed for the thin, crispy skin, with authentic versions of the dish serving mostly skin and little meat. Whilst sauces and accompaniments will vary between restaurants (the most common being scallion and cucumber) it is difficult to go wrong with roast duck in Beijing. <span><a href="http://www.chinahighlights.com/beijing/food-restaurant.htm">Read more at China Highlights</a></span></p>
+        </article> 
+        <article class="a2">
+          <h3>Noodles with Soybean Paste / Zhajiang Mian</h3>
+          <picture>
+          <source media="(max-width: 799px)" srcset="./images/zhajiangmian-small.jpg">
+          <source media="(min-width: 800px)" srcset="./images/zhajiangmian-wide.jpg">
+          <img src="./images/zhajiangmian-wide.jpg" alt="Noodles with Soybean Paste">
+          </picture>
+          <p class="hide1"><b>Noodles with Soybean Paste or Zhajiang Mian</b> (炸酱面 zhá jiàng miàn /jaa-jyang myen/)is very popular when it comes to traditional Beijing cuisine. It has three main ingredients: wide hand-pulled noodles, vegetable pieces, and pork. Vegetables vary seasonally, but there are never less than seven kinds. It is an ideal lunch time snack for visitors short on time as it is usually ready seconds after you order. As an added bonus it is very inexpensive. <span><a href="http://www.chinahighlights.com/beijing/food-restaurant.htm">Read more at China Highlights</a></span></p>
+        </article>
+        <article class="a3">
+            <h3>Tuckahoe Pie / Fuling Jiabing</h3>
+          <picture>
+          <source media="(max-width: 799px)" srcset="./images/fulingjiabing-small.jpg">
+          <source media="(min-width: 800px)" srcset="./images/fulingjiabing-wide.jpg">
+          <img src="./images/fulingjiabing-wide.jpg" alt="Tuckahoe Pie">
+          </picture>
+          <p class="hide1"><b>Tuckahoe pie or Fuling Jiabing</b> (茯苓夹饼 fúlíng jiābǐng /foo-ling jyaa-bing/) is a traditional paper-thin snack in the shape of a full moon, popular in Beijing. It consists of a basic pancake wrapped in sugar, honey and an assortment of nuts.</p>
+          <p class="hide1">The herb tuckahoe has many medical effects, and therefore it is popular with Chinese people, especially women and the elderly. <span><a href="http://www.chinahighlights.com/beijing/food-restaurant.htm">Read more at China Highlights</a></span></p>
+        </article>
+      </section>
+      <div>
+        <a id="button2"	href="#button2"><span class="fa fa-subway" aria-hidden="true"></span>Transportation<i id="icon2" class="fa fa-caret-down" aria-hidden="true"></i></a>
+      </div>
+      <article>
+        <h3>Fastest: Subway Lines</h3>
+        <picture>
+        <source media="(max-width: 799px)" srcset="./images/Beijing-Subway_en-small.png">
+        <source media="(min-width: 800px)" srcset="./images/Beijing-Subway_en-large.png">
+        <img src="./images/Beijing-Subway_en-large.png" alt="Beijing Subway Map 2017">
+      </picture>
+      <p class="hide2"><b>Beijing subway is the fastest transportation</b> in downtown and it is a good way to avoid frequent traffic jams. Presently there are 18 subway lines plus one airport express line in operation. They connect city center stops such as Tiananmen Square, Qianmen, and the railway station with outlying areas.</p>
+      <p class="hide2">The price is charged according to the distance. It is CNY3 for the first 3.7 miles (6km), CNY4 for 3.7 to 7.5 miles (6 to 12km), CNY5 for 7.5 to 13.7 miles (12 to 22km), CNY6 for 13.7 to 20 miles (22 to 32km), extra CNY2 for every additional 12.4 miles (20km) if distance over 20 miles (32km). A <a href="https://www.travelchinaguide.com/cityguides/beijing/transportation/smart-card.htm">Transportation Smart Card</a> can be used for paying. The stops are announced in both Chinese and English. Passengers can query the subway staff to avoid going in the wrong direction and wasting time. </p>
+      <p class="hide2"><b>Attractions along with Line 2: </b> <br />
+      <i class="fa fa-caret-right" aria-hidden="true"></i> <u>Gulou Stop:</u> Bell and Drum Towers, Hutong and Courtyard<br />
+      <i class="fa fa-caret-right" aria-hidden="true"></i> <u>Yonghegong Stop:</u> Yonghe Lamasery, Guozijian, Temple of Confucius, Ditan Park<br />
+      <i class="fa fa-caret-right" aria-hidden="true"></i> <u>Jianguomen Stop:</u> Ancient Observatory, Xiushui Market<br />
+      <i class="fa fa-caret-right" aria-hidden="true"></i> <u>Qianmen Stop:</u> Tiananmen Square, Dashanlan<br />
+      <span><a href="https://www.travelchinaguide.com/cityguides/beijing/transportation/subway.htm">Read more at Travel China Guide</a></span></p>
+      </article>
+    </section>
+    <footer>Design by Andi Zhou.</footer>
+    <script src="jscripts.js"></script>
+    <script src="https://use.fontawesome.com/76b18e051a.js"></script>
+  </body>
+</html>

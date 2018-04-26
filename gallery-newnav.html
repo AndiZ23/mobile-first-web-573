@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=devlice-width" />
+    <title>Gallery - Beijing</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style-new.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>  
+    
+      <!-- Horinzontal nav on wide screens -->
+      <nav class="w3-bar w3-border w3-theme w3-large w3-padding-16">
+        <a href="home-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-home" aria-hidden="true"></span>Home</a>
+        <a href="attractions-newnav.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-hand-peace-o" aria-hidden="true"></span>Attractions</a>
+        <a href="local-new.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-info-circle" aria-hidden="true"></span>Local</a>
+        <a href="gallery-newnav.html" class="w3-bar-item w3-button w3-hide-small"><span class="fa fa-picture-o" aria-hidden="true"></span>Gallery</a>
+          
+        <!-- Hide the hamburger icon on wide screens, but show on small screens -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fa fa-bars fa-lg"></i></a>
+      </nav>
+      
+      <!-- Vertical container (w3-bar-block) for nav elements -->
+      <nav id="smallnav" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium w3-large w3-padding-16">
+        <a href="attractions-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-hand-peace-o" aria-hidden="true"></span>Attractions</a>
+        <a href="local-new.html" class="w3-bar-item w3-button"><span class="fa fa-info-circle" aria-hidden="true"></span>Local</a>
+        <a href="gallery-newnav.html" class="w3-bar-item w3-button"><span class="fa fa-picture-o" aria-hidden="true"></span>Gallery</a>
+      </nav>
+
+    
+    <section class="gallery-content">
+        <div class="title">
+          <h2><b>The Great Wall</b></h2>
+        </div>
+        <section class="imgs">
+          <div>
+            <img src="./images/the-great-wall-2190047_640.jpg" alt="pic-greatwall">
+          </div>
+          <div>
+            <img src="./images/china-2091360_640.jpg" alt="pic-greatwall">
+          </div>
+          <div>
+            <img src="./images/the-great-wall-677213_640.jpg" alt="pic-greatwall">
+          </div>
+          <div>
+            <img src="./images/china-2097075_640.jpg" alt="pic-greatwall">
+          </div>
+        </section>
+        
+        <div class="title">
+          <h2><b>The Heaven Temple</b></h2>
+        </div>
+        <section class="imgs">
+          <div>
+            <img src="./images/china-746652_640.jpg" alt="pic-heaventemple">
+          </div>
+          <div>
+            <img src="./images/temple-of-heaven-173207_640.jpg" alt="pic-heaventemple">
+          </div>
+          <div>
+            <img src="./images/china-1367646_640.jpg" alt="pic-heaventemple">
+          </div>
+          <div>
+            <img src="./images/beijing-1430437_640.jpg" alt="pic-heaventemple">
+          </div>
+          
+        </section>
+        
+        <div class="title">
+          <h2><b>The Bird's Nest <br>(National Olympic Stadium)</b></h2>
+        </div>
+        <section class="imgs">
+          <div>
+            <img src="./images/fireworks-79575_640.jpg" alt="pic-birdnest">
+          </div>
+          <div>
+            <img src="./images/beijing-1825436_640.jpg" alt="pic-birdnest">
+          </div>
+          <div>
+            <img src="./images/nest-670207_640.jpg" alt="pic-birdnest">
+          </div>
+        </section>
+    </section>
+    <footer>Design by Andi Zhou.</footer>
+    <script src="jscripts.js"></script>
+    <script>
+function myFunction() {
+  var x = document.getElementById("smallnav");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+    </script>
+    <script src="https://use.fontawesome.com/76b18e051a.js"></script>
+  </body>
+</html>
